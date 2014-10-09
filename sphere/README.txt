@@ -18,10 +18,14 @@ Be able to easily ask for
  $Features
  ============
 
- -Doesn't really do anything yet
-
+-Asks for the coeficients of a three dimensional cartesian vector {test1.exe}
+-Prints them to the screen {test1.exe} verified as working
+-Determines the spherical cords of the vector and prints them to the screen
+-If only inputs are 0's the user is told it can't be resolved and the program finishes
 
  $TODOs
  =============
-Use user input to create a vector object
-use this vector to define parameters of a sphere 
+Have the program reprompt them when they enter only zeros
+Have the program exit if the values are NULL
+Have it determine the cross sectional area (at a given intersection plane determined by an input)
+Have it determine the volume
