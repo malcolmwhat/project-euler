@@ -25,7 +25,6 @@ Be able to easily ask for
 
  $TODOs
  =============
-Have the program reprompt them when they enter only zeros
-Have the program exit if the values are NULL
 Have it determine the cross sectional area (at a given intersection plane determined by an input)
 Have it determine the volume
+
