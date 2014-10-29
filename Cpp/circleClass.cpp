@@ -18,9 +18,10 @@ using namespace std;
  */
  class Circle{
  	double radius;
+ 	double getAreaCircle();
  public:
  	void setRadius(int);
- 	double getAreaCircle();
+ 	void printAreaCircle();
  };
 
 /**
@@ -33,6 +34,9 @@ using namespace std;
  double Circle::getAreaCircle(){
  	return ((radius)*(radius)*3.14);
  }
+ void Circle::printAreaCircle(){
+	cout << "The area of the circle of radius " << radius <<" is: " << getAreaCircle() << '\n';
+}
 
 /**
  * @brief Main
@@ -41,16 +45,16 @@ using namespace std;
  * @return ends the program
  */
 int main(){
-	Circle circle, circleTwo;
+	Circle circleOne, circleTwo;
 	int i, j;
 	cout << "Enter the radius of a circle: \n";
 	cin >> i;
 	cout << "Enter the radius of another circle: \n";
 	cin >> j;
-	circle.setRadius(i);
-	cout << "The area of the circle of radius " << i <<" is: " << circle.getAreaCircle() << '\n';
+	circleOne.setRadius(i);
 	circleTwo.setRadius(j);
-	cout << "The area of the circle of radius " << j <<" is: " << circleTwo.getAreaCircle();
+	circleOne.printAreaCircle();
+	circleTwo.printAreaCircle();
 	return 0;
 }
 
