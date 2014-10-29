@@ -2,8 +2,8 @@
  * The scope of this cpp file is to create a circle class and allow return of it's area and other interesting stuff
  */
 
- #include <iostream>
- using namespace std;
+#include <iostream>
+using namespace std;
 
 /**
  * @brief Circle Class
