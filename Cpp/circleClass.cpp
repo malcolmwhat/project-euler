@@ -45,16 +45,16 @@ using namespace std;
  * @return ends the program
  */
 int main(){
-	Circle circleOne, circleTwo;
-	int i, j;
-	cout << "Enter the radius of a circle: \n";
-	cin >> i;
-	cout << "Enter the radius of another circle: \n";
-	cin >> j;
-	circleOne.setRadius(i);
-	circleTwo.setRadius(j);
-	circleOne.printAreaCircle();
-	circleTwo.printAreaCircle();
+	Circle circle;
+	int r, x, y;
+	cout << "Radius of a circle: \n";
+	cin >> r;
+	cout << "Center coordinates: \n X: " ;
+	cin >> x;
+	cout << "Y: ";
+	cin >> y;
+	circle.setRadius(r);
+	circle.printAreaCircle();
 	return 0;
 }
 
