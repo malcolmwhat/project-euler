@@ -1,3 +1,3 @@
 import subprocess
 lpr = subprocess.Popen("/usr/bin/lpr", stdin=subprocess.PIPE)
-lpr.stdin.write()
+lpr.stdin.write("malcolm is beatiful")
