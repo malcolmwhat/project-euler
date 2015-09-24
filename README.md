@@ -1,9 +1,8 @@
 $self
 ====
 
-$self Contains all processes involved in my self teaching of various languages
+$self Pretty much contains an out of date cpp folder from when I taught myself c++. 
+It also contains some ongoing work I've been doing on ProjectEuler questions. I started these in 
+C++ and then jumped over to python. I don't really plan on going back and refactoring old
+stuff, most recent code is indexed / explained in the readme.
 
-Notes
-======
-1- For the most part the learning of the language takes precendence over style, so someo of the code is groty.
-2- Files that matter will have their own READMEs to explain what they do.
