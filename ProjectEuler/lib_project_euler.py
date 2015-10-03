@@ -8,15 +8,20 @@ def is_prime(integer_input):
     Returns:
         Boolean True if Prime, False if not
     """
-    #0, 1 & 2 are all prime
-    if integer_input <= 2:
+    
+    # Cover values less than 2
+    if integer_input < 2:
+        return False
+
+    # 2 is the only even prime, so give it its own check
+    if integer_input == 2:
         return True
 
-    #If it's even it's not prime
+    # If it's even it's not prime
     if integer_input % 2 == 0:
         return False
 
-    #Optimized to only go to sqrt(integer_input)
+    # Loop untill the square root of input rounded up
     upperLim = math.ceil(math.sqrt(integer_input))
     i = 3
     while i <= upperLim:
