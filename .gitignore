@@ -29,3 +29,4 @@
 
 # Compiled pyc
 *.pyc
+*.class
