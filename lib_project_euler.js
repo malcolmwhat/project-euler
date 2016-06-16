@@ -5,14 +5,13 @@
  * @return {Boolean} true if prime, false if not
  */
 function isPrime(input){
-    // We convert to int so that we can use strict equalities -> Efficiency
+    // Convert to int, allows strict equality checks
     var n = parseInt(input, 10);
 
-    // Check with soft equals to see if we have the same value ('2' -> 2 would give true here, whereas '2.3' -> 2 would not)
-    if (n != input || isNaN(n)){
-        throw new Error('Why are you entering non-integers... Stop being a dink');
+    // Check for true integer
+    if (n % 1 !== 0 || isNaN(n)){
+        throw new Error('Do not enter non-integer values.');
     }
-
 
     if (n < 2) {
         return false;
